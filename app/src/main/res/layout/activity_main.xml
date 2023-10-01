@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvHomepage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Homepage"
+        android:layout_marginTop="20dp"
+        android:textSize="22sp"
+        android:fontFamily="@font/poppinsbold"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/tvHomepage"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true">
+
+
+        <CalendarView
+            android:id="@+id/date_Picker"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            android:layout_centerHorizontal="true"
+            android:calendarViewShown="true"
+            android:background="@drawable/timedate_shape"
+            android:elevation="8dp"
+            />
+
+        <TimePicker
+            android:id="@+id/time_Picker_View"
+            android:timePickerMode="spinner"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/timedate_shape"
+            android:elevation="8dp"
+            />
+
+        <Spinner
+            android:id="@+id/spinner_Presensi"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            android:fontFamily="@font/poppinsregular"
+            android:background="@drawable/dropdown_shape"
+            android:backgroundTint="#EDEDED"
+            android:paddingLeft="32dp"
+            android:spinnerMode="dropdown"
+            />
+
+        <EditText
+            android:id="@+id/keterangan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:hint="Keterangan"
+            android:textSize="16sp"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            android:background="@drawable/dropdown_shape"
+            android:backgroundTint="#EDEDED"
+            android:paddingLeft="36dp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:fontFamily="@font/poppinsbold"
+        android:layout_below="@+id/tvHomepage"
+        android:layout_marginTop="630dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/button_shape"
+        />
+
+</RelativeLayout>
