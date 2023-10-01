@@ -84,7 +84,7 @@ class MainActivity : AppCompatActivity() {
                     selectedDate = "$dayOfMonth ${months[month]} $year"
                 }
 
-                // Ambil waktu dari TimePicker
+                // Ambil waktu dari Timepicker
                 val selectedTime = SimpleDateFormat("hh:mm a", Locale.getDefault())
                     .format(Calendar.getInstance().apply {
                         set(Calendar.HOUR_OF_DAY, timePickerView.hour)
